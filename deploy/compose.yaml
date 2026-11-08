@@ -1,4 +1,4 @@
-# Learning Grounds on our VPS, behind tagmephotos's nginx (docs/DEPLOY.md).
+# Learning Grounds on our VPS, behind tagmephotos's nginx.
 # The published ports are on 127.0.0.1 only, for deploy.sh's health check; the public way in is
 # tagme's nginx over its network. Start it with deploy/deploy.sh, which passes .env.web for the
 # build arguments below.

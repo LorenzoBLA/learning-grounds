@@ -90,7 +90,7 @@ import {
 import { resolveLanguage } from "./lg-tutor-prompt";
 import type { LgBackground, LgDocument, LgDocumentPage, LgLanguage, LgRegion, PenColor } from "./lg-types";
 
-// The seam between the board and the voice session (vision doc, section 8.1).
+// The seam between the board and the voice session.
 // Voice client tools and the test buttons both call applyLgAction and nothing else.
 // Each action becomes a plan for the tutor's pen (lg-tutor-pen.ts), which draws it by hand while
 // the tutor talks: it travels to the problem, then inks the mark stroke by stroke. Tutor marks
@@ -845,7 +845,7 @@ export function setLgPenColor(color: PenColor) {
   }
 }
 
-// The tools the floating pencil menu exposes (vision doc, section 4.1).
+// The tools the floating pencil menu exposes.
 export const LG_TOOLS = ["select", "hand", "draw", "eraser", "text", "arrow", "laser"] as const;
 export type LgTool = (typeof LG_TOOLS)[number];
 

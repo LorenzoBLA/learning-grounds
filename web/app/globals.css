@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
-  Learning Grounds design system. Light theme only (docs/design/brief.md).
+  Learning Grounds design system. Light theme only.
   Colour comes from the tutor: the --tutor-* variables are set per tutor by paletteVars()
   in lib/lg-palette.ts. Everything else stays a warm neutral.
 */
@@ -285,7 +285,7 @@
 }
 
 /*
-  The tutor orb (components/tutor-orb.tsx), adapted from the 21st.dev Siri orb (docs/design/21st/siri-orb.tsx).
+  The tutor orb (components/tutor-orb.tsx), adapted from the 21st.dev Siri orb.
   A perfect circle of turning colour. The component's draw loop sets --orb-angle, --orb-scale and
   --orb-glow, so what the tutor is doing changes how fast it turns, how big it is and how much it glows.
   Sizes come from the orb's own width (cqi), so the hero and the docked orb both look right.

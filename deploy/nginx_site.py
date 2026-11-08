@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Add Learning Grounds' sites to tagmephotos's nginx, or take them out again (docs/DEPLOY.md).
+"""Add Learning Grounds' sites to tagmephotos's nginx, or take them out again.
 
     python3 /opt/learning-grounds/deploy/nginx_site.py install learningrounds.com
     python3 /opt/learning-grounds/deploy/nginx_site.py remove
@@ -94,7 +94,7 @@ def main() -> None:
     if not re.fullmatch(r"[a-z0-9-]+(\.[a-z0-9-]+)+", domain):
         sys.exit("Give our domain, such as: nginx_site.py install learningrounds.com")
     if not Path(f"/etc/letsencrypt/live/{domain}/fullchain.pem").exists():
-        sys.exit(f"There's no certificate for {domain} yet. Get it with certbot first (docs/DEPLOY.md, step 5).")
+        sys.exit(f"There's no certificate for {domain} yet. Get it with certbot first.")
     if not BACKUP.exists():
         shutil.copy2(TARGET, BACKUP)
     block = (HERE / "nginx.conf").read_text().replace("DOMAIN", domain)

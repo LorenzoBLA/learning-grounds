@@ -34,7 +34,7 @@ const CHECK_STATUS_LABEL: Record<WorkCheck["status"], string> = {
 };
 
 function act(name: string, parameters: Record<string, unknown>, action: LgAction) {
-  // Timestamps feed the latency targets Q-01 and Q-02 in the technical scope.
+  // Timestamps for measuring how fast the tutor responds.
   console.log(`[lg-voice] ${new Date().toISOString()} tool ${name}`, parameters);
   applyLgAction(action);
 }

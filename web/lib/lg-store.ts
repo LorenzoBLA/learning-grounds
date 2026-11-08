@@ -37,7 +37,7 @@ function preset(id: string, name: string, color: Tutor["color"], language: Tutor
 }
 
 const DEFAULT_STATE: LgState = {
-  // The three presets suggested in the vision doc, section 4.2.
+  // The three preset tutors.
   tutors: [
     preset("prof-ana", "Prof. Ana", "blue", "pt", "casual"),
     preset("don-mateo", "Don Mateo", "red", "es", "formal"),

@@ -47,7 +47,7 @@ function AskForm({ regionId, regionLabel }: { regionId: string; regionLabel: str
   );
 }
 
-// The same seam the voice session calls (vision doc, section 8.1), kept as a manual
+// The same seam the voice session calls, kept as a manual
 // test surface for every tutor tool. It lives inside the history sidebar so the board stays clear.
 export function TutorActions() {
   const state = useLgState();

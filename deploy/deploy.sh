@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Pull main, rebuild both images and restart Learning Grounds on the server (docs/DEPLOY.md).
+# Pull main, rebuild both images and restart Learning Grounds on the server.
 #
 #   /opt/learning-grounds/deploy/deploy.sh
 set -euo pipefail
@@ -11,7 +11,7 @@ flock 9
 
 for file in .env.api .env.web; do
   if [[ ! -s $file ]]; then
-    echo "deploy/$file is missing. Copy it from your laptop first (docs/DEPLOY.md, step 3)." >&2
+    echo "deploy/$file is missing. Copy it from your laptop first." >&2
     exit 1
   fi
 done

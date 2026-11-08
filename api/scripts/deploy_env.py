@@ -1,4 +1,4 @@
-"""Print a service's environment file for the server (docs/DEPLOY.md), straight into place over SSH:
+"""Print a service's environment file for the server, straight into place over SSH:
 
     uv run scripts/deploy_env.py api example.com | ssh root@SERVER 'cat > /opt/learning-grounds/deploy/.env.api'
     uv run scripts/deploy_env.py web example.com --tldraw-key KEY | ssh root@SERVER 'cat > /opt/learning-grounds/deploy/.env.web'

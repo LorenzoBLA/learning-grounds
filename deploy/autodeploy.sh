@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Run every 2 minutes by learning-grounds-autodeploy.timer (docs/DEPLOY.md). Deploys only when GitHub's
+# Run every 2 minutes by learning-grounds-autodeploy.timer. Deploys only when GitHub's
 # main has moved past what the server has checked out. A failed deploy isn't retried until the next push,
 # so a broken build doesn't rebuild over and over on a server it shares with tagmephotos.
 set -euo pipefail

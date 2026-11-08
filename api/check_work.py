@@ -1,6 +1,6 @@
 """Check my work: Gemini reads a snapshot of the board and reports on the student's math.
 
-The result goes to the tutor, who answers in its own voice (vision doc, section 8.4).
+The result goes to the tutor, who answers in its own voice.
 """
 import logging
 from typing import Literal

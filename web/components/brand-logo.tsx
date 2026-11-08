@@ -2,7 +2,7 @@ import { cn } from "cn";
 import Image from "next/image";
 import Link from "next/link";
 
-// The app's logo. Files live in public/brand (see docs/design/brief.md, "Logo"):
+// The app's logo. Files live in public/brand:
 // learning-grounds-wordmark.png  the name and bulb, for small spaces like headers
 // learning-grounds-logo.png      with the perspective grid, for large spaces like a login page
 // ...-wordmark-light.png         white, for dark backgrounds

@@ -13,7 +13,7 @@ import { deleteTutor, updateTutor, useHydrated, useLgState } from "@/lib/lg-stor
 import { LANGUAGE_OPTIONS, STYLE_OPTIONS, TONE_OPTIONS, TUTOR_COLORS } from "@/lib/lg-types";
 import { defaultVoice, findVoice, voiceOptions } from "@/lib/lg-voices";
 
-// The locked core from the vision doc, section 5. Students can read it but not edit it.
+// The locked core of every tutor prompt. Students can read it but not edit it.
 const LOCKED_CORE = [
   "Guide first.",
   "Never give a final answer before the student attempts it.",

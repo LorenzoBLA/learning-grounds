@@ -1,4 +1,4 @@
-// Field names follow the data model in docs/learning-grounds-vision.md, section 8.6.
+// The app's data model.
 
 export type LgLanguage = "pt" | "es" | "en";
 export type TutorTone = "casual" | "humorous" | "formal";
